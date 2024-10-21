@@ -14,16 +14,17 @@ body {
   font-size: 16px;
 }
 
-/*Sizing*/
+/*sizing*/
 
 .container {
   margin: 0 auto;
   max-width: 1250px;
 }
 
-/* Navigation */
+/* navigation */
 
-nav {
+nav,
+footer {
   background-color: #5f5b5c;
 }
 
@@ -49,7 +50,7 @@ nav {
   float: right;
 }
 
-/* Hero */
+/* hero */
 
 .hero {
   background-image: url("../imgs/yarniahero.jpg");
@@ -68,6 +69,49 @@ nav {
   background-color: #fcfcfc;
   color: #909090;
   padding: 50px;
+}
+
+/* statement */
+
+.statement {
+  padding: 30px 0;
+}
+
+/* shop preview */
+
+.shop {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.favourites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.faveitem {
+  flex-direction: column;
+}
+
+.faveitem img {
+  transition: all 0.4s ease-in-out;
+  border-radius: 10px;
+}
+
+.faveitem img:hover {
+  transform: scale(1.02);
+}
+
+.faveitem span {
+  font-size: 22px;
+  display: block;
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 550px) {
