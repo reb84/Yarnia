@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yarnia</title>
-    <!-- google fonts -->
+    <title>Yarnia - Craft & Whimsy</title>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="/styles.css" />
@@ -13,18 +19,17 @@
     <!-- navigation -->
     <nav>
       <div class="container">
-        <div class="topnav">
-          <!-- Left-aligned links (default) -->
-          <a href="#">Classes</a>
-          <a href="#">Events</a>
-          <a href="#">Blog</a>
-
-          <!-- Right-aligned links -->
-          <div class="topnav-right">
-            <a href="#">Wishlist</a>
-            <a href="#">My Account</a>
-            <a href="#">Log In</a>
-          </div>
+        <div class="nav-logo">
+          <h2>Yarnia</h2>
+        </div>
+        <div class="nav">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#">Shop</a></li>
+            <li class="nav-item"><a href="#">Events</a></li>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item"><a href="#">Log In</a></li>
+            <li class="nav-item"><a href="#">My Account</a></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -32,34 +37,103 @@
       <div class="hero">
         <div class="hero-text">
           <h1>Welcome to Yarnia</h1>
-          <h2>Where crafty meets whimsy!</h2>
+          <h3>Where crafty meets whimsy!</h3>
         </div>
       </div>
     </header>
-    <main>
-      <div class="statement"><h3>gather - create - explore</h3></div>
-      <div class="shop">
-        <div class="container">
-          <h3>shop our favourites</h3>
 
-          <div class="favourites">
-            <div class="faveitem">
-              <div class="fave-img"><img src="imgs\shop01.jpg" /></div>
-              <span><a href="#">description</a></span>
-            </div>
-            <div class="faveitem">
-              <div class="fave-img"><img src="imgs\shop01.jpg" /></div>
-              <span><a href="#">description</a></span>
-            </div>
-            <div class="faveitem">
-              <div class="fave-img"><img src="imgs\shop01.jpg" /></div>
-              <span><a href="#">description</a></span>
-            </div>
+    <!-- statement -->
+
+    <section class="statement-container">
+      <div class="container">
+        <div class="statements">
+          <div class="statement-box">
+            <img src="imgs\yicon1.png" />
+            <h3>Patterns</h3>
           </div>
-          <!-- TESTING -->
+          <div class="statement-box">
+            <img src="imgs\yicon3.png" />
+            <h3>Yarn</h3>
+          </div>
+          <div class="statement-box">
+            <img src="imgs\yicon2.png" />
+            <h3>Accessories</h3>
+          </div>
         </div>
       </div>
-    </main>
-    <footer><h1>FOOTER STUFF</h1></footer>
+    </section>
+
+    <!-- shopping -->
+
+    <section class="shopping-container">
+      <div class="container">
+        <h2>Shop our favourites</h2>
+        <div class="shopping">
+          <div class="shopping-box">
+            <a href="#"><img src="imgs\shop01.jpg" /></a>
+            <h3>Threads</h3>
+          </div>
+          <div class="shopping-box">
+            <a href="#"><img src="imgs\shop02.jpg" /></a>
+            <h3>Needles</h3>
+          </div>
+          <div class="shopping-box">
+            <a href="#"><img src="imgs\shop05.jpg" /></a>
+            <h3>Yarn</h3>
+          </div>
+          <div class="shopping-box">
+            <a href="#"><img src="imgs\shop03.jpg" /></a>
+            <h3>Patterns</h3>
+          </div>
+          <div class="shopping-box">
+            <a href="#"><img src="imgs\shop06.jpg" /></a>
+            <h3>Extras</h3>
+          </div>
+        </div>
+        <div class="button-main">
+          <a class="section-button" href="#" title="Click for the full range">Shop All</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- patterns -->
+
+    <section class="pattern-container">
+      <div class="container">
+        <h2>Pattern Library</h2>
+        <div class="patterns">
+          <div class="pattern-row">
+            <div class="pattern-column">
+              <img src="/imgs/pat01.jpg" />
+              <img src="/imgs/pat02.jpg" />
+            </div>
+            <div class="pattern-column">
+              <img src="/imgs/pat05.jpg" />
+              <img src="/imgs/pat03.jpg" />
+            </div>
+            <div class="pattern-column">
+              <img src="/imgs/pat04.jpg" />
+              <img src="/imgs/pat06.jpg" />
+            </div>
+            <div class="pattern-column">
+              <img src="/imgs/pat08.jpg" />
+              <img src="/imgs/pat07.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="button-main">
+          <a class="section-button" href="#" title="See our full pattern library"
+            >Shop All Patterns</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        @Rebecca Upton. 2024. Website made for Codecademy Challenge. Knitting icons created by
+        <a href="https://www.flaticon.com/free-icons/knitting" title="knitting icons">Iconixar</a>.
+      </p>
+    </footer>
   </body>
 </html>
