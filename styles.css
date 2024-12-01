@@ -23,6 +23,16 @@ h4 {
   color: #334437;
 }
 
+a {
+  color: #ff7e30;
+}
+
+a:hover {
+  color: #ac4c12;
+  font-style: italic;
+  text-decoration: none;
+}
+
 /*sizing*/
 
 .container {
@@ -78,7 +88,7 @@ nav {
 
 .hero {
   background-image: linear-gradient(rgba(216, 216, 216, 0.4), rgba(166, 204, 171, 0.4)),
-    url("../imgs/yarniahero.jpg");
+    url("imgs/yarniahero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -226,12 +236,15 @@ nav {
   font-size: 14px;
 }
 
+
+
 /* responsive */
 
 @media screen and (max-width: 768px) {
   .hero-text {
     font-size: 20px;
   }
+
   .statements {
     min-width: 30%;
     margin: 0 auto;
@@ -245,6 +258,7 @@ nav {
     flex: 50%;
   }
 }
+
 @media screen and (max-width: 480px) {
   .nav-menu {
     display: flex;
